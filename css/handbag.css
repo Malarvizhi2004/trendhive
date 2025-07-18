@@ -1,0 +1,200 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 20px;
+}
+
+/* CONTAINER */
+.shopa-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 30px;
+  justify-content: center;
+}
+
+.product-info {
+  flex: 1;
+  min-width: 380px;
+}
+
+.product-info h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #00ffe7;
+  text-shadow: 0 0 10px #00ffe799;
+}
+
+.price {
+  color: #00ffe7;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.ratings h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #00ccff;
+}
+
+.review-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 0 20px rgba(0, 255, 231, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px #00ffe7aa;
+}
+
+.review-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #00ffe7;
+}
+
+.actions {
+  margin-top: 18px;
+}
+
+.actions .btn,
+.actions button {
+  background: #00ffe7;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  margin-right: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 20px rgba(0,255,231,0.3);
+}
+
+.actions .btn:hover,
+.actions button:hover {
+  background: #00ccbb;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #00ffe7;
+}
+
+.product-image img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0,255,231,0.3);
+}
+
+/* POPUP AT BOTTOM */
+.order-popup {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  scroll-margin-top: 100px;
+}
+
+#popup1:checked ~ .order-popup {
+  display: flex;
+}
+
+.popup-panel {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 0 20px #00ffe7;
+}
+
+.popup-panel img {
+  width: 250px;
+  margin: 0 auto 15px;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 0 10px #00ffe7;
+}
+
+.popup-panel p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #eee;
+}
+
+.payment-options {
+  margin: 10px 0 20px 0;
+}
+
+.payment-options label {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.confirm-btn,
+.cancel-btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #00ffe7;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(0,255,231,0.3);
+}
+
+.confirm-btn:hover,
+.cancel-btn:hover {
+  background-color: #00d6c5;
+  box-shadow: 0 0 20px #00ffe7;
+}
+
+/* Address box */
+.address-box {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 231, 0.1);
+  border-left: 4px solid #00ffe7;
+}
+
+.address-details p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #eee;
+}
